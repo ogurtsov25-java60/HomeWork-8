@@ -12,21 +12,22 @@
     font-style: normal;
     font-display: swap;
 }
-h3{
-    letter-spacing: 2cap;
-}
 html {
     font-size: 62.5%;
 }
 .logo {
     font-family: 'Lakeshor';
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     font-size: 2rem;
     text-align:center;
     background-color: azure;
     border: 3px solid black;
+    margin-left: 40rem;
     width: 650px;
-    height: 60px;
+    height: 20px;
+    word-spacing: 5px;
 }
 
 .gallery--item_image {
@@ -37,8 +38,9 @@ html {
 
 }
 .gallery {
-    display: inline-block;
-    flex-direction: column;
+    display: flex;
+    margin-left: -40rem;
+    flex-direction: row;
     height: 500px;
     object-fit: cover;
     overflow:auto;
@@ -49,7 +51,7 @@ html {
     font-family: "Ubuntu", serif;
     font-weight: 600;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background-color: aliceblue;
     text-align: center;
     overflow:auto;
@@ -69,23 +71,26 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 .general--image{
     clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0% 30%);
     margin-top: 30px;
-    width: 480px;
+    width: 180px;
     height: auto;
     margin-left: 5px;
     
 }
 .title--general--image{
-    display: flex;
+    display: inline-block;
+    flex-direction: row;
     background: white;
     font-size: 20px;
     border:3px solid rgb(17, 17, 17);
     align-items: center;
     width: 150px;
-    margin-top: -20px;
+    margin-top:-30px;
+    margin-left: -53rem;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
@@ -93,10 +98,7 @@ html {
    
 }
 
-.headerlogo{
-    display: flex;
-    justify-content: center;
-}
+
 .gallery--item_image:hover{
     filter:blur(3px);
 }
@@ -155,11 +157,11 @@ body{
         .general--image{
             clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 70%, 70% 100%, 0 100%, 0% 70%, 0% 30%);
             margin-top: 30px;
-            width: 675px;
+            width: 53rem;
             height: auto;
             margin-left: 5px;}
         .logo{
-            width: 850px;
+            width: 670px;
         }
         h3{
             font-size: 30px;
@@ -170,12 +172,11 @@ body{
         }
         .title--general--image:hover
      {
-        margin-top: -240px;
+        margin-top: -380px;
         white-space:initial;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
-        
+    } 
         }
         
 
@@ -185,3 +186,7 @@ body{
     font-style: italic;
 }
 
+
+.animate__fadeInLeft {
+    animation: 2s;
+}
